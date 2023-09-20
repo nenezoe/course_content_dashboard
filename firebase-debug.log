@@ -1,0 +1,35 @@
+[debug] [2023-05-02T16:42:05.862Z] ----------------------------------------------------------------------
+[debug] [2023-05-02T16:42:05.865Z] Command:       /usr/local/bin/firebase /Users/mac/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-05-02T16:42:05.865Z] CLI Version:   11.29.1
+[debug] [2023-05-02T16:42:05.865Z] Platform:      darwin
+[debug] [2023-05-02T16:42:05.865Z] Node Version:  v16.16.0
+[debug] [2023-05-02T16:42:05.871Z] Time:          Tue May 02 2023 17:42:05 GMT+0100 (West Africa Standard Time)
+[debug] [2023-05-02T16:42:05.871Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-02T16:42:05.963Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-02T16:42:05.964Z] > authorizing via signed-in user (samuelaholu15@gmail.com)
+[debug] [2023-05-02T16:42:05.964Z] [iam] checking project healthgo-dashboard for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-02T16:42:05.966Z] > refreshing access token with scopes: []
+[debug] [2023-05-02T16:42:05.968Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-02T16:42:05.968Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-02T16:42:06.468Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-02T16:42:06.469Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-02T16:42:06.515Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthgo-dashboard:testIamPermissions [none]
+[debug] [2023-05-02T16:42:06.515Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthgo-dashboard:testIamPermissions x-goog-quota-user=projects/healthgo-dashboard
+[debug] [2023-05-02T16:42:06.515Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthgo-dashboard:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-02T16:42:07.739Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthgo-dashboard:testIamPermissions 200
+[debug] [2023-05-02T16:42:07.739Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthgo-dashboard:testIamPermissions {}
+[debug] [2023-05-02T16:42:07.740Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project healthgo-dashboard:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-05-02T16:42:07.741Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/healthgo-dashboard [none]
+[debug] [2023-05-02T16:42:08.391Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/healthgo-dashboard 403
+[debug] [2023-05-02T16:42:08.391Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/healthgo-dashboard {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-02T16:42:08.392Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-02T16:42:08.783Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/mac/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/mac/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project healthgo-dashboard. Please make sure the project exists and your account has permission to access it.
