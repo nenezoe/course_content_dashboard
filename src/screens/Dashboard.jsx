@@ -32,7 +32,7 @@ function Dashboard() {
 
               <Card.Text>
                 Upload a new product to the store for users to see and buy on
-                the HealthGO app.
+                the Klosa app.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -45,13 +45,13 @@ function Dashboard() {
                 <CloudUploadFill size={30} />
 
                 <span style={{ margin: '0px 0px 0px 20px' }}>
-                  Course Upload
+                  Category Upload
                 </span>
                 </Link>
               </Card.Title>
               <Card.Text>
                 Upload a new product to the store for users to see and buy on
-                the HealthGO app.
+                the Klosa app.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -63,13 +63,13 @@ function Dashboard() {
                 <ClockHistory size={30} />
 
                 <span style={{ margin: '0px 0px 0px 20px' }}>
-                  Course Upload
+                  Category Upload
                 </span>
               </Card.Title>
 
               <Card.Text>
                 Upload a new product to the store for users to see and buy on
-                the HealthGO app.
+                the Klosa app.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -85,7 +85,7 @@ function Dashboard() {
 
               <Card.Text>
                 Upload a new product to the store for users to see and buy on
-                the HealthGO app.
+                the Klosa app.
               </Card.Text>
             </Card.Body>
           </Card>

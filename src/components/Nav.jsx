@@ -29,7 +29,7 @@ const Nav = () => {
                 <CloudUploadFill size={30} />
 
                 <span style={{ margin: "0px 0px 0px 20px" }}>
-                  Course Upload
+                  Category Upload
                 </span>
               </Link>
             </Card.Title>

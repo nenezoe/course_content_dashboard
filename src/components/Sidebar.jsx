@@ -33,7 +33,7 @@ const Sidebar = ({ sideBar }) => {
               </Link>
               <Link className="link nav-item" to="/upload/course">
                 <div className="text-primary list mb-4">
-                  <CloudUpload size={25} /> Course Upload
+                  <CloudUpload size={25} /> Category Upload
                 </div>
               </Link>
               {/* <Link className="link nav-item" to="/history">

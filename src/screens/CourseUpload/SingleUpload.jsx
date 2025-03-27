@@ -469,7 +469,7 @@ function SingleUpload() {
         <div className="text-primary my-5 d-flex ">
           <CloudUploadFill size={50} />
           <h3 className="text-primary" style={{ marginLeft: "10px" }}>
-            Course Upload
+            Category Upload
           </h3>
         </div>
         <div>
